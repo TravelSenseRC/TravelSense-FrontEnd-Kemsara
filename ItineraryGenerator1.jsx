@@ -304,7 +304,8 @@ const styles = StyleSheet.create({
         justifyContent:'space-between',
         backgroundColor: 'lightgray',
         width: '100%',
-        padding: 10
+        padding: 10,
+        borderRadius: 10,
       },
 
       nextButton: {
