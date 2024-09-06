@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Home from './HomeScreenMain'; 
-import ItineraryScreen from '../components/ItineraryScreen'; 
+import ItineraryStackNavigator from './ItineraryStackNav'; 
 import SavedScreen from '../components/SavedScreen'; 
 import SettingsScreen from '../components/SettingsScreen';
 
@@ -28,7 +28,7 @@ function MyTabs() {
       />
       <Tab.Screen
         name="Itinerary"
-        component={ItineraryScreen}
+        component={ItineraryStackNavigator}
         options={{
           tabBarLabel: 'Itinerary',
           tabBarIcon: ({ color, size }) => (
